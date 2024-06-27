@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('ot2.jpeg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: #333; /* Text color for better contrast */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Text color for headers */
+}
+
+form, #filterForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form input, form select, form button, #filterForm input, #filterForm select, #filterForm button {
+    flex: 1;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* White background for form elements */
+    color: #333; /* Text color for input elements */
+}
+
+form button, #filterForm button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: #fff; /* White text color for buttons */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover, #filterForm button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+.task {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for tasks */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333; /* Text color for tasks */
+}
+
+.task h3 {
+    margin: 0;
+}
+
+.task p {
+    margin: 5px 0;
+}
+
+.task button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: #fff; /* White text color for buttons */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task button.edit {
+    background-color: #FFC107; /* Orange background for edit button */
+    color: #333; /* Darker text color for edit button */
+}
+
+.task button.edit:hover {
+    background-color: #e0a800; /* Darker orange background on hover */
+}
+
+.task button:hover {
+    background-color: #45a049; /* Darker green background on hover */
+}
+
+.task select {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.no-results {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
